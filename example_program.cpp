@@ -44,6 +44,10 @@ int main()
 	g_typeRegister.registerType<float>("float").constructable<float>().copyable<float>().compareable<float>();
 	g_typeRegister.registerType<double>("double").constructable<double>().copyable<double>().compareable<double>();
 
+	// In addition, we can do the:
+	// constructable, copyable, assignable, comparable and so on automatically, but for the sake of simplicity I've skipped them.
+	// However if someone is interested let me know (with an issue) and I will update the example.
+	
 	// Register a few custom types.
 	REGISTER_TYPE(std::string)
 		.constructable<std::string>()
